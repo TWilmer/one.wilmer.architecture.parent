@@ -8,5 +8,21 @@ Bundle-SymbolicName: one.wilmer.architecture; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext,
  org.eclipse.xtext.xbase,
- org.eclipse.equinox.common;bundle-version="3.19.0"
+ org.eclipse.equinox.common;bundle-version="3.19.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.43.0",
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
 Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: one.wilmer.architecture.archSpec.impl,
+ one.wilmer.architecture.parser.antlr.internal,
+ one.wilmer.architecture,
+ one.wilmer.architecture.archSpec,
+ one.wilmer.architecture.generator,
+ one.wilmer.architecture.archSpec.util,
+ one.wilmer.architecture.validation,
+ one.wilmer.architecture.serializer,
+ one.wilmer.architecture.parser.antlr,
+ one.wilmer.architecture.scoping,
+ one.wilmer.architecture.services
+Import-Package: org.apache.log4j

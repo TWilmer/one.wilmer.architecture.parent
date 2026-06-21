@@ -30,7 +30,7 @@
 				<configuration>
 					<products>
 						<product>
-							<id>one.wilmer.architecture.rcp</id>
+							<id>one.wilmer.architecture.server</id>
 						</product>
 					</products>
 				</configuration>

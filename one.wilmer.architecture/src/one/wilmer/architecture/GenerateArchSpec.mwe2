@@ -55,6 +55,7 @@ Workflow {
 			junitSupport = {
 				junitVersion = "6"
 			}
+			fragment = builder.BuilderIntegrationFragment2 {}
 		}
 	}
 }

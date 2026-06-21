@@ -8,7 +8,9 @@ Bundle-SymbolicName: one.wilmer.architecture.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: one.wilmer.architecture,
  org.eclipse.xtext.testing,
- org.eclipse.xtext.xbase.testing
+ org.eclipse.xtext.xbase.testing,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.43.0"
 Import-Package: org.junit.jupiter.api;version="[6.0.0,7.0.0)",
  org.junit.jupiter.api.extension;version="[6.0.0,7.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: one.wilmer.architecture.tests;x-internal=true

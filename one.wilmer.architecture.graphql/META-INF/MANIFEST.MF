@@ -3,6 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Graphql
 Bundle-SymbolicName: one.wilmer.architecture.graphql;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Require-Bundle: org.eclipse.core.runtime
+Require-Bundle: org.eclipse.core.runtime,
+ one.wilmer.architecture;bundle-version="1.0.0",
+ one.wilmer.architecture.ide;bundle-version="1.0.0",
+ one.wilmer.architecture.tests;bundle-version="1.0.0",
+ one.wilmer.architecture.ui;bundle-version="1.0.0",
+ one.wilmer.architecture.ui.tests;bundle-version="1.0.0"
 Automatic-Module-Name: one.wilmer.architecture.graphql
 Bundle-RequiredExecutionEnvironment: JavaSE-21

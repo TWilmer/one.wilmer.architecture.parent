@@ -29,7 +29,9 @@
 		<module>one.wilmer.architecture.repository</module>
 		<module>one.wilmer.architecture.tests</module>
 		<module>one.wilmer.architecture.ui.tests</module>
-                <module>one.wilmer.architecture.graphql</module>
+        <module>one.wilmer.architecture.graphql</module>
+        <module>one.wilmer.architecture.rcp</module>
+        <module>one.wilmer.architecture.server</module>
 	</modules>
 	<dependencyManagement>
 		<dependencies>

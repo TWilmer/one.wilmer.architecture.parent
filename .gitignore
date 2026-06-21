@@ -1,0 +1,7 @@
+*/bin
+*/.settings/
+*/src-gen/
+*/xtend-gen/
+*/target
+one.wilmer.architecture.web/WebRoot/
+

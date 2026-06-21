@@ -8,5 +8,9 @@ Bundle-SymbolicName: one.wilmer.architecture.ide; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: one.wilmer.architecture,
  org.eclipse.xtext.ide,
- org.eclipse.xtext.xbase.ide
+ org.eclipse.xtext.xbase.ide,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)",
+ org.eclipse.jdt.core;bundle-version="3.46.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-21
+Export-Package: one.wilmer.architecture.ide.contentassist.antlr,
+ one.wilmer.architecture.ide.contentassist.antlr.internal

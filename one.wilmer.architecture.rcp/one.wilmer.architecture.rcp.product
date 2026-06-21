@@ -34,26 +34,42 @@ This product includes software developed by other open source projects including
       startupProgressRect="2,290,448,10"
       startupMessageRect="7,265,320,20"
       startupForegroundColor="ffffff" />
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
    <vm>
       <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21</linux>
    </vm>
+
 
    <plugins>
       <plugin id="one.wilmer.architecture"/>
       <plugin id="one.wilmer.architecture.graphql"/>
       <plugin id="one.wilmer.architecture.ide"/>
-      <plugin id="one.wilmer.architecture.rcp"/>
       <plugin id="one.wilmer.architecture.tests"/>
       <plugin id="one.wilmer.architecture.ui"/>
       <plugin id="one.wilmer.architecture.ui.tests"/>
       <plugin id="org.eclipse.search"/>
+      <plugin id="org.eclipse.xtext.builder"/>
       <plugin id="org.eclipse.xtext.ui.shared"/>
+      <plugin id="org.eclipse.xtext.xbase.ui"/>
    </plugins>
 
    <features>
-      <feature id="org.eclipse.platform" installMode="root"/>
+      <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.jdt" installMode="root"/>
    </features>
 
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>
