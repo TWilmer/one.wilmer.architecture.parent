@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="%productName" uid="onw.wilmer.architecture.ide" id="org.eclipse.platform.ide" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" type="mixed" includeLaunchers="true" autoIncludeRequirements="true">
+
+   <aboutInfo>
+      <image path="eclipse_lg.png"/>
+      <text>
+         %productBlurb
+      </text>
+   </aboutInfo>
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <vmArgs>-Xms40m -Xmx512m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages i16="eclipse16.svg" i32="eclipse32.svg" i48="eclipse48.svg"/>
+
+   <splash
+      startupProgressRect="2,290,450,10"
+      startupMessageRect="7,265,250,25"
+      startupForegroundColor="ffffff" />
+   <vm>
+      <linux include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21</linux>
+   </vm>
+
+   <plugins>
+      <plugin id="one.wilmer.architecture"/>
+      <plugin id="one.wilmer.architecture.graphql"/>
+      <plugin id="one.wilmer.architecture.ide"/>
+      <plugin id="one.wilmer.architecture.tests"/>
+      <plugin id="one.wilmer.architecture.ui"/>
+      <plugin id="one.wilmer.architecture.ui.tests"/>
+   </plugins>
+
+
+</product>
