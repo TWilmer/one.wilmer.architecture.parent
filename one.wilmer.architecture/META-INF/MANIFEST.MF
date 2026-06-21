@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: one.wilmer.architecture
+Bundle-ManifestVersion: 2
+Bundle-Name: one.wilmer.architecture
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: one.wilmer.architecture; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.19.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-21

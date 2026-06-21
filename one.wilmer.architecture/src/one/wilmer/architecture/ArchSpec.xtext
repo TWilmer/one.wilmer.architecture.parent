@@ -1,0 +1,9 @@
+grammar one.wilmer.architecture.ArchSpec with org.eclipse.xtext.common.Terminals
+
+generate archSpec "http://www.wilmer.one/architecture/ArchSpec"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';
