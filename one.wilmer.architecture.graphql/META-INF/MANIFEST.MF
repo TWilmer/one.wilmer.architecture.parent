@@ -5,9 +5,16 @@ Bundle-SymbolicName: one.wilmer.architecture.graphql;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Require-Bundle: org.eclipse.core.runtime,
  one.wilmer.architecture;bundle-version="1.0.0",
- one.wilmer.architecture.ide;bundle-version="1.0.0",
- one.wilmer.architecture.tests;bundle-version="1.0.0",
- one.wilmer.architecture.ui;bundle-version="1.0.0",
- one.wilmer.architecture.ui.tests;bundle-version="1.0.0"
+ com.google.inject;bundle-version="[7.0.0,8.0.0)",
+ org.eclipse.xtext;bundle-version="2.43.0",
+ com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.22.0",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.22.0",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.22.0",
+ graphql-java;bundle-version="230521.0.0"
 Automatic-Module-Name: one.wilmer.architecture.graphql
 Bundle-RequiredExecutionEnvironment: JavaSE-21
+Import-Package: org.eclipse.emf.common.util;version="[2.45.0,3.0.0)",
+ org.eclipse.emf.ecore;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.resource;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.resource.impl;version="[2.42.0,3.0.0)",
+ org.eclipse.emf.ecore.util;version="[2.42.0,3.0.0)"
