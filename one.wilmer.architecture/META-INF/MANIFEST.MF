@@ -24,5 +24,6 @@ Export-Package: one.wilmer.architecture.archSpec.impl,
  one.wilmer.architecture.serializer,
  one.wilmer.architecture.parser.antlr,
  one.wilmer.architecture.scoping,
- one.wilmer.architecture.services
+ one.wilmer.architecture.services,
+ one.wilmer.architecture.resource
 Import-Package: org.apache.log4j

@@ -3,7 +3,32 @@ grammar one.wilmer.architecture.ArchSpec with org.eclipse.xtext.common.Terminals
 generate archSpec "http://www.wilmer.one/architecture/ArchSpec"
 
 Model:
-	greetings+=Greeting*;
 	
+	items+=Item*
+;
+
+Item:		
+ 'greet'	{Item} greetings+=Greeting*;
+	
+enum AnEnum:
+	VALUE1='value1' |
+	VALUE2='value2'
+;	
 Greeting:
-	'Hello' name=ID '!';
+	'Hello' name=ID '{' enumTest=AnEnum 'greet' greeter=[Greeting]
+		('value' value=INT)?
+	'}';
+
+FQN:
+	ID('.'ID)*
+;
+
+
+@Exported	
+Component:
+	'component' name=ID ('refine' refine=[Component|FQN])? '{'
+		( subComponent+=Component)*
+		
+	'}'
+	key=ID
+;
