@@ -37,6 +37,8 @@ Workflow {
 			name = "one.wilmer.architecture.ArchSpec"
 			fileExtensions = "aspec"
 
+
+    
 			serializer = {
 				generateStub = false
 			}
@@ -56,6 +58,11 @@ Workflow {
 				junitVersion = "6"
 			}
 			fragment = builder.BuilderIntegrationFragment2 {}
+			
+			
+    		// Add the post-processor inside the modern 'ecore' block
+   
+    		
 		}
 	}
 }

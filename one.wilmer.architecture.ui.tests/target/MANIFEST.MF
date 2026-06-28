@@ -3,7 +3,7 @@ Automatic-Module-Name: one.wilmer.architecture.ui.tests
 Bundle-ManifestVersion: 2
 Bundle-Name: one.wilmer.architecture.ui.tests
 Bundle-Vendor: My Company
-Bundle-Version: 1.0.0.202606211339
+Bundle-Version: 1.0.0.202606281006
 Bundle-SymbolicName: one.wilmer.architecture.ui.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: one.wilmer.architecture.ui,org.eclipse.xtext.testing,org

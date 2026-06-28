@@ -4,11 +4,13 @@ generate archSpec "http://www.wilmer.one/architecture/ArchSpec"
 
 Model:
 	
-	items+=Item*
+ items+=Item*
 ;
 
-Item:		
- 'greet'	{Item} greetings+=Greeting*;
+Item:	
+	Greeting | Component
+;	
+
 	
 enum AnEnum:
 	VALUE1='value1' |
